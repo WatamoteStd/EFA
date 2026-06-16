@@ -14,7 +14,9 @@ namespace EFA.Core
             {"открой ютюб", new BrowserSearch()}, 
             {"молодец", new EFABless()},
             {"помощь", new CommandList()},
-            {"help",new CommandList()}
+            {"help",new CommandList()},
+            {"сервер", new StartServer()},
+            {"закрой", new KillProcess()},
         };
 
         public void ExecuteCommand(string command)

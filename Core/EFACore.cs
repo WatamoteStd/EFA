@@ -14,7 +14,7 @@ namespace EFA.Core
             if (string.IsNullOrEmpty(input)) return null;
 
             string clearInpute = input.Trim().ToLower();
-            if (clearInpute.StartsWith("efa") || clearInpute.StartsWith("ифа"))
+            if (clearInpute.StartsWith("efa") || clearInpute.StartsWith("ифа") || clearInpute.StartsWith("ifa"))
             {
                 
                 string request = clearInpute.Substring(3).Trim();
