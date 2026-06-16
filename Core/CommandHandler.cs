@@ -9,9 +9,12 @@ namespace EFA.Core
         
         private string _lastCommand;
 
-        public readonly Dictionary<string, ICommandable> CommandsDictionary = new Dictionary<string, ICommandable>
+        public static readonly Dictionary<string, ICommandable> CommandsDictionary = new Dictionary<string, ICommandable>
         {
-            {"открой ютюб", new BrowserSearch()}
+            {"открой ютюб", new BrowserSearch()}, 
+            {"молодец", new EFABless()},
+            {"помощь", new CommandList()},
+            {"help",new CommandList()}
         };
 
         public void ExecuteCommand(string command)

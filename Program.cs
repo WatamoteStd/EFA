@@ -4,7 +4,7 @@ EFACore core = new EFACore();
 
 Console.WriteLine();
 Console.WriteLine("EFA: v0.0.2");
-Console.WriteLine("========================================================================");
+Console.WriteLine("========================================================================\n");
 
 while(true)
 {
