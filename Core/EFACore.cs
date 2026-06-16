@@ -6,7 +6,7 @@ namespace EFA.Core
     public class EFACore
     {
 
-        
+        private readonly  CommandHandler _commandHandler = new CommandHandler();
 
         public string? ProcessInput(string input)
         {
@@ -18,7 +18,7 @@ namespace EFA.Core
             {
                 
                 string request = clearInpute.Substring(3).Trim();
-                return request;
+                _commandHandler.ExecuteCommand(request);
 
             }
 
